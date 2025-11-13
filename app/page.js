@@ -1,6 +1,10 @@
+'use client';
+import { useState } from "react";
 import Button from "@/components/Button";
 
 export default function Home() {
+  const [display, setDisplay] = useState("0");
+
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-center p-24 gap-8`}
@@ -10,7 +14,7 @@ export default function Home() {
       >
         <div
           className={`bg-white p-4 mt-4 text-4xl text-right text-black rounded w-2xl `}>
-          0
+          {display}
         </div>
         <div
           className={`grid grid-cols-4 gap-2 m-4 w-2xl text-black`}
