@@ -74,17 +74,17 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-center p-24 gap-8`}
+      className={`flex min-h-screen flex-col items-center justify-center p-4 md:p-24 gap-4 md:gap-8`}
     >
       <section
-        className={`flex flex-col items-center justify-center bg-gray-900 p- rounded w-3xl`}
+        className={`flex flex-col items-center justify-center bg-gray-900 p-3 md:p-6 rounded w-full max-w-xs md:max-w-md`}
       >
         <div
-          className={`bg-white p-4 mt-4 text-4xl text-right text-black rounded w-2xl `}>
+          className={`bg-white p-3 md:p-4 mt-3 md:mt-4 text-2xl md:text-4xl text-right text-black rounded w-full`}>
           {display}
         </div>
         <div
-          className={`grid grid-cols-4 gap-2 m-4 w-2xl text-black`}
+          className={`grid grid-cols-4 gap-2 m-3 md:m-4 w-full text-black`}
         >
           <Button className={`col-span-3 bg-red-600`} onClick={handleClear}>AC</Button>
           <Button className={`bg-green-600`} onClick={() => handleOperation("/")}>​/</Button>
