@@ -5,11 +5,6 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-center p-24 gap-8`}
     >
-      <h1
-        className={`text-6xl`}
-      >
-        Calculadora Next
-      </h1>
       <section
         className={`flex flex-col items-center justify-center bg-gray-900 p- rounded w-3xl`}
       >
