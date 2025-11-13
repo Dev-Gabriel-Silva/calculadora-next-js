@@ -1,19 +1,32 @@
-# Calculadora em next
+# Calculadora em Next.js
 
-Calculadora feita com next.js 
+> Projeto de uma calculadora simples construída com Next.js e Tailwind CSS.
 
-## Como rodar esse projeto?
+## Como rodar este projeto
 
-First, run the development server:
+Primeiro, instale dependências e rode o servidor de desenvolvimento:
 
 ```bash
+npm install
 npm run dev
-# or
+# ou
+yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) com seu navegador e veja o resultado.
+Abra http://localhost:3000 no navegador para ver a aplicação.
+## Preview (GitHub Pages)
+Você pode ver um preview hospedado no GitHub Pages:
+[https://dev-gabriel-silva.github.io/calculadora-next-js/](https://dev-gabriel-silva.github.io/calculadora-next-js/)
+
+![Preview da calculadora](docs/preview.png)
+
+## Testes
+Testes unitários usam Vitest. Para rodar os testes:
+```bash
+npm test
+# ou
+npm run test:watch
+## Observações
+- Este repositório contém uma implementação simples da lógica da calculadora no arquivo `app/page.js`.
+- Planejamento: extrair `Screen` e `Keyboard` em componentes e mover a lógica para um hook (`useCalculator`) para melhor testabilidade e reutilização.
